@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir" : "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ipc/*": ["electron/ipc/*"]
+    }
+  },
+  "include": [
+    "electron/*.ts",
+    "electron/**/*.ts",
+  ]
+}
