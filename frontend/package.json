@@ -1,0 +1,41 @@
+{
+  "name": "oasis",
+  "homepage": "./",
+  "dependencies": {
+    "craco": "^0.0.3",
+    "craco-alias": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.54.5",
+    "tsconfig-paths": "^4.1.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "BUILD_PATH='../backend/react' craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

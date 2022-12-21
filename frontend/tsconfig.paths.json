@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@Cards/*": ["src/Cards/*"],
+      "@Components/*": ["src/Components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@scss/*": ["src/scss/*"],
+      "@ipc/*": ["src/ipc/*"]
+    }
+  }
+}

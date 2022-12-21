@@ -1,0 +1,30 @@
+@import "./default_variables.scss";
+
+.Update {
+  height: 100%;
+  background-color: $blue-200;
+  img {
+    width: 300px;
+  }
+  .log {
+    min-height: 4rem;
+  }
+  .progress {
+    flex-grow: 1;
+    height: 12px;
+    progress {
+      display: block;
+      appearance: none;
+      height: 100%;
+      width: 100%;
+      &::-webkit-progress-bar {
+        border-radius: $border-radius-big;
+        background-color: $white;
+      }
+      &::-webkit-progress-value {
+        border-radius: $border-radius-big;
+        background: $blue-300
+      }
+    }
+  }
+}

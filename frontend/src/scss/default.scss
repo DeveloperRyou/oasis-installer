@@ -1,0 +1,81 @@
+@import "./default_class.scss";
+
+html {
+  background-color: $gray-100;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  font-family: Poppins,
+    sans-serif;
+  font-weight: 400;
+  font-size: $fs-5;
+  #root{
+    height: 100%;
+  }
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+  height: fit-content;
+  margin: auto 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+i {
+  display: block;
+}
+
+hr {
+  width: 100%;
+  background-color: $gray-200;
+  height: 1px;
+  border: 0px;
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+}
+
+button {
+  cursor: pointer;
+	border-radius: $border-radius;
+  height: 40px;
+  line-height: 40px;
+  width: 100px;
+  transition: 0.3s;
+  color: $white;
+  font-weight: 600;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+input, select {
+  box-sizing: border-box;
+  height: 30px;
+  border: 1px solid $black;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
