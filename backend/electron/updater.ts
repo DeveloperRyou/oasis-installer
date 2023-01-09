@@ -4,7 +4,6 @@ import channel from '@ipc/channel';
 
 export default (win: BrowserWindow, startUrl: string) =>
 {
-    autoUpdater.setFeedURL("https://github.com/DeveloperRyou/oasis");
 	const webContents = win.webContents;
 
 	autoUpdater.on('checking-for-update', () => {
@@ -17,6 +16,7 @@ export default (win: BrowserWindow, startUrl: string) =>
 		webContents.send(channel.update.log, "최신버전입니다.");
 	});
 	autoUpdater.on('error', (err) => {
+		//console.log(err);
 		const message = "업데이트에 실패했습니다.</br>" + err.message.split('\n')[0];
 		webContents.send(channel.update.log, message);
 	});
@@ -32,5 +32,5 @@ export default (win: BrowserWindow, startUrl: string) =>
 		webContents.send(channel.update.log, "업데이트가 완료되었습니다.");
 		autoUpdater.quitAndInstall();
 	});
-    autoUpdater.checkForUpdates();
+    autoUpdater.checkForUpdatesAndNotify();
 }
