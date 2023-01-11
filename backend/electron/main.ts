@@ -31,7 +31,8 @@ app.on('ready', () => {
         win.show()
     });
     win.loadURL(startUrl+"#/update");
-    updater(win, startUrl);
+    
+    updater(win);
 });
 
 app.on('window-all-closed', () => {

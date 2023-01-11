@@ -28,12 +28,8 @@
     "url": "https://github.com/DeveloperRyou/oasis.git"
   },
   "build": {
-    "extends": null,
     "appId": "com.oasis",
     "productName": "Oasis",
-    "publish": {
-      "provider": "github"
-    },
     "files": [
       "react/**/*",
       "build/**/*"
@@ -50,7 +46,6 @@
     },
     "win": {
       "target": [
-        "zip",
         "nsis"
       ],
       "icon": "./resources/installer/icon.png"
