@@ -30,6 +30,7 @@ export default (win: BrowserWindow) =>
 	});
 	autoUpdater.on('update-downloaded', () => {
 		webContents.send(channel.update.log, "업데이트가 완료되었습니다.");
+		autoUpdater.quitAndInstall();
 	});
     autoUpdater.checkForUpdates();
 }
